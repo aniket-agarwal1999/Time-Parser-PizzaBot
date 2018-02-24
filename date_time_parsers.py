@@ -29,14 +29,14 @@ time_list=[1,2,3,6,7,8,9,10,11,12]
     #creating and filling heap
 big_heap=[]
 for item in lis:
-    if item in obj or multi or drx_obj:
+    if item in obj or multi or drx_obj or obj_s :
         big_heap.append(item)
 num=0
 
 length_heap=len(big_heap)
 
 while num<length_heap:
-        #if item is drx_obj
+        #if item is drx_obj or days
         
         
     if big_heap[num] in days:
@@ -57,7 +57,7 @@ while num<length_heap:
                 date_now[date_lvler.index(grp)]+=drx_obj[big_heap[num]]
 
 
-        #if item is multi or obj
+        #if item is multi or obj or obj_s
 
     if big_heap[num] in multi:
         if temp!=999:
@@ -91,7 +91,8 @@ while num<length_heap:
         else:
             temp=obj_s[big_heap[num]]*int(big_heap[num-1])
             
-            
+        #this is for seeing the am, pm and o'clock terms
+
     if big_heap[num] == 'a.m':
         ttemp=big_heap[num-1]
         ttemp=ttemp.split(':')
@@ -99,10 +100,10 @@ while num<length_heap:
             time_now[0]=ttemp[0]
             time_now[1]=0
             time_now[2]=0
-            if len(ttemp)==2:
-                time_now[0]=ttemp[0]
-                time_now[1]=ttemp[1]
-                time_now[2]=0
+        elif len(ttemp)==2:
+            time_now[0]=ttemp[0]
+            time_now[1]=ttemp[1]
+            time_now[2]=0
 
     if big_heap[num] == 'a.m.':
         ttemp=big_heap[num-1]
@@ -111,10 +112,10 @@ while num<length_heap:
             time_now[0]=ttemp[0]
             time_now[1]=0
             time_now[2]=0
-            if len(ttemp)==2:
-                time_now[0]=ttemp[0]
-                time_now[1]=ttemp[1]
-                time_now[2]=0
+        if len(ttemp)==2:
+            time_now[0]=ttemp[0]
+            time_now[1]=ttemp[1]
+            time_now[2]=0
             
     if big_heap[num] == 'p.m':
         ttemp=big_heap[num-1]
@@ -176,10 +177,5 @@ if date_now[1]==2:
             date_now[1]+=(dtemp/28)+1
 
 
-
-
-
-
 print(date_now)
 print(time_now)
-
