@@ -23,10 +23,11 @@ temp=999
 #get ip
 a=input()
 #a=voice_input()
+a = a.lower()
 lis=a.split()
 
 time_list=[1,2,3,6,7,8,9,10,11,12]
-    #creating and filling heap
+    #creating and filling heap that can store the different time related arguments by the user
 big_heap=[]
 for item in lis:
     if item in obj or multi or drx_obj or obj_s :
@@ -54,7 +55,7 @@ while num<length_heap:
     if big_heap[num] in drx_obj:
         for grp in date_lvler:
             if big_heap[num] in grp:
-                date_now[date_lvler.index(grp)]+=drx_obj[big_heap[num]]
+                date_now[date_lvler.index(grp)]+=drx    _obj[big_heap[num]]
 
 
         #if item is multi or obj or obj_s
@@ -112,7 +113,7 @@ while num<length_heap:
             time_now[0]=ttemp[0]
             time_now[1]=0
             time_now[2]=0
-        if len(ttemp)==2:
+        elif len(ttemp)==2:
             time_now[0]=ttemp[0]
             time_now[1]=ttemp[1]
             time_now[2]=0
@@ -124,7 +125,7 @@ while num<length_heap:
             time_now[0]=str(int(ttemp[0])+12)
             time_now[1]=0
             time_now[2]=0
-        if len(ttemp)==2:
+        elif len(ttemp)==2:
             time_now[0]=str(int(ttemp[0])+12)
             time_now[1]=ttemp[1]
             time_now[2]=0
@@ -137,15 +138,25 @@ while num<length_heap:
             time_now[0]=str(int(ttemp[0])+12)
             time_now[1]=0
             time_now[2]=0
-        if len(ttemp)==2:
+        elif len(ttemp)==2:
             time_now[0]=str(int(ttemp[0])+12)
             time_now[1]=ttemp[1]
             time_now[2]=0
-            
-            
+
+     if big_heap[num] == 'oclock':
+         ttemp = big_heap[num-1]
+         ttemp=ttemp.split(':')
+        if len(ttemp)==1:
+            time_now[0]=str(int(ttemp[0]))
+            time_now[1]=0
+            time_now[2]=0
+        elif len(ttemp)==2:
+            time_now[0]=str(int(ttemp[0])+12)
+            time_now[1]=ttemp[1]
+            time_now[2]=0    
+
     num+=1
     
- 
     
 if date_now[1]>12:
     mtemp=date_now[1]

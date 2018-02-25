@@ -17,7 +17,7 @@ drx_obj={'today':0,'tomorrow':1,'yesterday':-1}
 
 days={'sunday':0,'monday':1,'tuesday':2,'wednesday':3,'thursday':4,'friday':5,'saturday':6}
 
-
+time_of_day={'morning':'a.m', 'noon':12, 'evening':'p.m', 'afternoon':'a.m', 'night':'p.m', 'dawn':'a.m', }
 
 
 date_lvler=[['year','decade','century'],['month'],
