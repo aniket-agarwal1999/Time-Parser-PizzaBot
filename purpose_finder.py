@@ -51,6 +51,3 @@ else:
     elif purpose == 'game':
         print("Do you want to book a seat for a game?")
 
-yes_no = input()
-
-if(yes_no == "yes")

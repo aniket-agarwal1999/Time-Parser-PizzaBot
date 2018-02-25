@@ -1,6 +1,8 @@
 import get_present_datetime
 from get_present_datetime import *
 
+import jack
+
 
 def voice_input():
     
@@ -43,3 +45,4 @@ def voice_output(ans):
     eng.say(ans)
     eng.runAndWait()
     
+ans = voice_input()
