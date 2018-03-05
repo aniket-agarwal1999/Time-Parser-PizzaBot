@@ -10,7 +10,7 @@ data={'meet':'note','meeting':'note','wedding':'note','function':'note','alarm':
       
       'pizza':'food','dominos':'food','pizzahut':'food','hungry':'food','hunger':'food','lunch':'food','dinner':'food','breakfast':'food','kathi':'food','khana':'food','bhojan':'food',
       'bhook':'food','pet':'food','stomach':'food','shop':'food','nashta':'food','restaurant':'food','hotel':'food','dhaba':'food','canteen':'food','cafe':'food','motel':'food','inn':'food',
-      'cuisine':'food','multicuisine':'food','bakery':'food','chopati':'food','khana':'food','khane':'food','roll':'food','bhookh':'food','bhookha':'food','food':'food',
+      'cuisine':'food','multicuisine':'food','bakery':'food','chopati':'food','khane':'food','roll':'food','bhookh':'food','bhookha':'food','food':'food',
       
       'movie':'movie','theater':'movie','ticket':'movie','show':'movie','cinema':'movie','multiplex':'movie','picture':'movie','cine':'movie','screen':'movie','talkies':'movie','movie':'movie',
       'screenplay':'movie','cartoon':'movie','opera':'movie','hollywood':'movie','bollywood':'movie','film':'movie','films':'movie','jhilli':'movie','chitra':'movie','chalchitra':'movie',

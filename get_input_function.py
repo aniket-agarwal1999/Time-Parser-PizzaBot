@@ -5,7 +5,7 @@
 
 
 def get_ip():
-    a=input('gimmie some input')
+    a=input()
     a=a.lower()
     lis= a.split()
     return lis

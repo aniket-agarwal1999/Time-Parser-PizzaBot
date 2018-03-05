@@ -1,3 +1,6 @@
+
+#I don't think this file is of any use
+
 import langid
 #it cannot detect hinglish but our users will either use english or hinglish 
 #so i am considering that if detect is not english then it is hinglish
