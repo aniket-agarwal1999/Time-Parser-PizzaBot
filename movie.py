@@ -3,7 +3,7 @@ from date_time_parsers import *
 
 import 
 
-movie = {'black':0, 'panther':1, 'hate':2, 'story':3, 'deadpool':4, 'baaghi':5, 'avengers':6, 'infinity':7, 'war':8}
+movie = {'black':0, 'panther':1, 'hate':2, 'story':3, 'deadpool':4, 'baaghi':5, 'avengers':6, 'infinity':7, 'war':8, 'iron': 9, 'man': 10}
 
 answers = {'y':0, 'yes':1, 'correct':2, 'right':3, 'awesome':4, 'alright':5, 'sahi':6, 'gazab':7, 'haan':8, 'ya':9, 'yeah':10}
 
@@ -18,6 +18,7 @@ def movie_decider:
     print("Avengers: Infinity War")
     print("Hate Story 4")
     print("Deadpool 2")
+    print("Iron Man")
     choice = input()
     choice = choice.lower()
     choice_list = choice.split()
@@ -52,7 +53,8 @@ def movie_decider:
     while j<len(form_list):
         if form_list[j] in format_of_movie:
             print("Okay, So you have chosen the format of the movie as ",form_list[j])
-
+    print("How many tickets do you want?")
+    tickets = input()
     print("At what time and  do you want to see the movie")
     date_time_parse()
     print("So this is the time and date you have booked the ticket for...")
